@@ -13,8 +13,7 @@ import matplotlib.pyplot as plt
 def read_data(inFileName):
     #to access the data from txt
     plotData = np.genfromtxt(inFileName, names=True)
-    plotData()
-    return plotData
+    return plotData()
 
 def plot_data( plotData, outFileName ):
     '''Uses matplotlib module to generate a single page figure with three 
