@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 def read_data(inFileName):
     #to access the data from txt
     plotData = np.genfromtxt(inFileName, names=True)
-    return plotData()
+    return plotData
 
 def plot_data( plotData, outFileName ):
     '''Uses matplotlib module to generate a single page figure with three 
@@ -71,8 +71,10 @@ if __name__ == '__main__':
     
 print('Enter any file : Tippecanoe_River_at_Ora.Annual_Metrics.txt or Wildcat_Creek_at_Lafayette.Annual_Metrics.txt\n')
 inFileName = str(input())
+print(input())
 print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
 outFileName = str(input())
+print(input())
     
 plotData = read_data(inFileName)  
 plot_data(plotData, outFileName)
