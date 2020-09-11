@@ -12,7 +12,8 @@ import matplotlib.pyplot as plt
 #read the file name
 def read_data(inFileName):
     #to access the data from txt
-    plotData = np.genfromtxt(inFileName, names = True)
+    plotData = np.genfromtxt(inFileName, names=True)
+    plotData()
     return plotData
 
 def plot_data( plotData, outFileName ):
@@ -74,7 +75,6 @@ inFileName = str(input())
 print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
 outFileName = str(input())
     
-
 plotData = read_data(inFileName)  
 plot_data(plotData, outFileName)
     
