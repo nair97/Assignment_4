@@ -66,13 +66,13 @@ if __name__ == '__main__':
     datafile to print, and then read in the contents of that file, and produce
     a plot matching the assignment requirements.'''
     
-print('Enter any file : Tippecanoe_River_at_Ora.Annual_Metrics.txt or Wildcat_Creek_at_Lafayette.Annual_Metrics.txt\n')
-inFileName = str(input())
-print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
-outFileName = str(input())
+    print('Enter any file : Tippecanoe_River_at_Ora.Annual_Metrics.txt or Wildcat_Creek_at_Lafayette.Annual_Metrics.txt\n')
+    inFileName = str(input())
+    print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
+    outFileName = str(input())
 
-plotData = read_data(inFileName)  
-plot_data(plotData, outFileName)
+    plotData = read_data(inFileName)  
+    plot_data(plotData, outFileName)
 
     
     
