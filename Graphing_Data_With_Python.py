@@ -62,10 +62,7 @@ def plot_data( plotData, outFileName ):
 # or being imported, in which case don't.
     
 if __name__ == '__main__':
-     '''Use this part of the program to prompt the user for the name of the 
-    datafile to print, and then read in the contents of that file, and produce
-    a plot matching the assignment requirements.'''
-    
+     
     print('Enter any file : Tippecanoe_River_at_Ora.Annual_Metrics.txt or Wildcat_Creek_at_Lafayette.Annual_Metrics.txt\n')
     inFileName = str(input())
     print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
