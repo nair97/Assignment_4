@@ -31,7 +31,7 @@ def plot_data( plotData, outFileName ):
     plt.plot(plotData['Year'], plotData['Min'], color = 'blue', label = 'Min')
     
     #label x and y axis for top plot
-    plt.xlabel('YearTippecanoe_River_at_Ora.Annual_Metrics.txt')
+    plt.xlabel('Year')
     plt.ylabel('Streamflow(cfs)')
     
     #plot legend
@@ -57,8 +57,6 @@ def plot_data( plotData, outFileName ):
     plt.savefig(outFileName)
     plt.close()
     
-    return plot_data
-    
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
 # or being imported, in which case don't.
@@ -73,8 +71,8 @@ inFileName = str(input())
 print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
 outFileName = str(input())
 
-read_data(inFileName)  
-plot_data(outFileName)
+plotData = read_data(inFileName)  
+plot_data(plotData, outFileName)
 
     
     
