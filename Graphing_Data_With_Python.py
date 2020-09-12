@@ -9,9 +9,7 @@ Created on Thu Sep 10 05:54:28 2020
 import numpy as np
 import matplotlib.pyplot as plt
 
-#read the file name
 def read_data(inFileName):
-    plotData = input()
     #to access the data from txt
     plotData = np.genfromtxt(inFileName, names=True)
     return plotData
@@ -72,7 +70,6 @@ if __name__ == '__main__':
     
 print('Enter any file : Tippecanoe_River_at_Ora.Annual_Metrics.txt or Wildcat_Creek_at_Lafayette.Annual_Metrics.txt\n')
 inFileName = str(input())
-
 print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
 outFileName = str(input())
 
