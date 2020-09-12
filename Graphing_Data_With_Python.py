@@ -73,8 +73,9 @@ inFileName = str(input())
 print('Enter any file :Tippecanoe_River_at_Ora.Annual_Metrics.pdf or Wildcat_Creek_at_Lafayette.Annual_Metrics.pdf\n')           
 outFileName = str(input())
 
-plotData = read_data(inFileName)  
-plot_data(plotData, outFileName)
+read_data(inFileName)  
+plot_data(outFileName)
+
     
     
     
