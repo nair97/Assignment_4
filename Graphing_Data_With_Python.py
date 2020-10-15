@@ -47,7 +47,7 @@ def plot_data( plotData, outFileName ):
     
     #bottom plot RB index (ratio)
     plt.subplot(3,1,3)
-    plt.plot(plotData['Year'], plotData['RBindex'],"g^")
+    plt.bar(plotData['Year'], plotData['RBindex'],color='b')
     
     #label x and y axis for bottom plot
     plt.xlabel('Year')
